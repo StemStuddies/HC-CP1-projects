@@ -1,6 +1,6 @@
 #hunter card character_intro.py
-name = input("whats your name? ")
-age = input("how old are you? ")
-job = input("whats your job? ")
-from_were = input("Were are you from? ")
-print(f"wow {name} thats cool! you are {age} and you do {job} for work. And you come from {from_were}.")
+name = "hunter"
+age = "15"
+job = "school"
+from_were = "utah"
+print(f"My name is {name} And I come from {from_were}. I am {age} years old and I do {job} for work.")
