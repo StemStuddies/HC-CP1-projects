@@ -13,10 +13,12 @@ turt = {
     9: turtle.Turtle(),
     10: turtle.Turtle(),
 }
+for y in turt:
+    turt[y].forward(random.randint(0,80))
+    turt[y].right(random.randint(-180,180))
 while True:
-    for y in turt:
-        turt[1].forward(random.randint(0,80))
-        turt[1].right(random.randint(-180,180))
+        turt[random.randint(1,10)].forward(random.randint(0,80))
+        turt[random.randint(1,10)].right(random.randint(-180,180))
 
 
 
