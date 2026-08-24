@@ -25,29 +25,28 @@ while True:
         green +=1
         print(f"{rgb(red, green, blue)} WOW! {RESET}")
         time.sleep(delay)
-        clear()
+    clear()
     for x in range(0,255):
         red -=1
         print(f"{rgb(red, green, blue)} WOW! {RESET}")
         time.sleep(delay)
-        clear()
+    clear()    
     for x in range(0,255):
         blue +=1
         print(f"{rgb(red, green, blue)} WOW! {RESET}")
         time.sleep(delay)
-        clear()
+    clear()
     for x in range(0,255):
         green -=1
         print(f"{rgb(red, green, blue)} WOW! {RESET}")
-        time.sleep(delay)
-        clear()
+    clear()
     for x in range(0,255):
         red +=1
         print(f"{rgb(red, green, blue)} WOW! {RESET}")
         time.sleep(delay)
-        clear()
+    clear()
     for x in range(0,255):
         blue -=1
         print(f"{rgb(red, green, blue)} WOW! {RESET}")
         time.sleep(delay)
-        clear()
+    clear()
