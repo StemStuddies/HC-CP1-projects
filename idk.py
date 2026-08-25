@@ -1,24 +1,47 @@
-import time
-import turtle
 import random
-turt = {
-    1: turtle.Turtle(),
-    2: turtle.Turtle(),
-    3: turtle.Turtle(),
-    4: turtle.Turtle(),
-    5: turtle.Turtle(),
-    6: turtle.Turtle(),
-    7: turtle.Turtle(),
-    8: turtle.Turtle(),
-    9: turtle.Turtle(),
-    10: turtle.Turtle(),
-}
-for y in turt:
-    turt[y].forward(random.randint(0,80))
-    turt[y].right(random.randint(-180,180))
-while True:
-        turt[random.randint(1,10)].forward(random.randint(0,80))
-        turt[random.randint(1,10)].right(random.randint(-180,180))
+import os
+import time
+# TERMINAL FUNCTIONS
+def rgb(r, g, b): #function to set color. using werid string thingys that im going to ignore :)       took me way to long to get the symbols to work.
+    return f"\033[38;2;{r};{g};{b}m"
+def clear(): #for clearing the terminal
+    os.system('cls' if os.name == 'nt' else 'clear')
+reset = "\033[0m"
+print(f" {reset}")
+
+print(f"{rgb(255,0,0)} wow this text is in red! {reset}")
+print(f"{rgb(255,255,0)} wow this text is in yellow! {reset}")
+print(f"{rgb(0,255,0)} wow this text is in green! {reset}")
+print(f"{rgb(0,255,255)} wow this text is in Cyan! {reset}")
+print(f"{rgb(0,0,255)} wow this text is in blue! {reset}")
+#print(f"{rgb(255, 0, 0)}Red{RESET} {rgb(0, 255, 0)}Green{RESET} {rgb(0, 0, 255)}Blue{RESET}")
+#print(f"{rgb(255, 50, 150)}Custom Neon Pink{RESET}")
+#print(f"{rgb(255,10,0)} custom COLOR AAAAa {RESET}")
+red = 255
+green = 0
+blue = 0
+delay = 0.01
+runpar = 0
+terlimit = 100
+colors = []
+print("\n")
+whatred = input("what color do you want to look for? red value: ")
+whatgreen = input("what color do you want to look for? green value: ")
+whatblue = input("what color do you want to look for? blue value: ")
+while (whatred == red and whatgreen == green and whatblue == blue) == False:
+    red = random.randint(0,255)
+    green = random.randint(0,255)
+    blue = random.randint(0,255)
+    print(f"{rgb(red,green,blue)}this is a random color! red = {red} green = {green} blue = {blue} {reset}")
+    time.sleep(0.1)
+    runpar += 1
+    if runpar >= terlimit:
+        clear()
+        runpar = 0
+
+print("found your color")
+print(f"{rgb(red,green,blue)}this is a random color! red = {red} green = {green} blue = {blue} {reset}")
+
 
 
 
