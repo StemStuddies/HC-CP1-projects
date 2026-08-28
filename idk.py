@@ -28,11 +28,18 @@ print("\n")
 whatred = input("what color do you want to look for? red value: ")
 whatgreen = input("what color do you want to look for? green value: ")
 whatblue = input("what color do you want to look for? blue value: ")
+print(f"{rgb(whatred,whatgreen,whatblue)} this is the color your looking for.")
+time.sleep(3)
 while (whatred == red and whatgreen == green and whatblue == blue) == False:
     red = random.randint(0,255)
     green = random.randint(0,255)
     blue = random.randint(0,255)
+    while colors == f"{red} {green} {blue}":
+        red = random.randint(0,255)
+        green = random.randint(0,255)
+        blue = random.randint(0,255)
     print(f"{rgb(red,green,blue)}this is a random color! red = {red} green = {green} blue = {blue} {reset}")
+    colors.append(f"{red} {green} {blue}")
     time.sleep(0.1)
     runpar += 1
     if runpar >= terlimit:
