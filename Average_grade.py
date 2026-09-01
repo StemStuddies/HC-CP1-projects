@@ -8,7 +8,7 @@ while True:
         break
 grades = [] #used for a list of grades
 for clas in range(classes): #loops for how many classes you have
-    while True:
+    while True: #testing for errors so and if they dont enter in a number it will ask again/
         try:
             grades.append(int(input(f"Whats youre grade in your {clas + 1} periode: "))) #addes grades to a list
         except:
