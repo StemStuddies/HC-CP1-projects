@@ -6,7 +6,7 @@ while True:
     except:
         print("Thats not a valid phone number? ")
     else:
-        phone_number = int(phone_number)
+        phone_number = str(phone_number)
         break
 while True:
     try:
@@ -19,6 +19,6 @@ while True:
             break
         else:
             print("thats not a valid GPA")
-print(f"name: {name} \nphone number: {phone_number} \nGPA: {gpa}")
+print(f"name: {name} \nphone number: {phone_number[0:3]}-{phone_number[3:6]}-{phone_number[6:11]} \nGPA: {gpa}")
 
 
