@@ -35,11 +35,3 @@ for x in range(0, dice): #
 print("number | total amount of times you rolled it")
 for num in range(1,dice_type + 1): #for loop to print every number possible in dice to display total number of times that dice was rolled.
     print(f"     {num} | {dice_rolls.count(int(num))} times") #prints the total amount of nums you rolled.
-
-
-
-
-
-
-
-    
