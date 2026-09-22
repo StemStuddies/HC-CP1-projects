@@ -1,3 +1,6 @@
+import subprocess as sub
+sub
+
 message = input("give me a message to encode ")
 codedlet = []
 for x in message:
