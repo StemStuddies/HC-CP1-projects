@@ -9,7 +9,7 @@ def listprint(table): #print function for code
 
 while True:
     while True: # stupid proof so users are not breaking things.
-        action = input("What would You like to do? (1:add 2:remove 3:view 4:exit) \n")#user input with instructions
+        action = input("What would You like to do? (1:add 2:remove 3:view 4:exit) \n").strip().lower()#user input with instructions
         if action in actions:
             break
         else:
@@ -33,4 +33,3 @@ while True:
         break
     print("your list so far-", end=" ")
     print(*items)
-
