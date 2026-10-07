@@ -21,6 +21,7 @@ age = 35
 if 18 < age:
     print("you are an adult")
 prin"""
+"""
 age = 10
 if age >= 18 :
     print("You are an adult and can vote!")
@@ -40,5 +41,13 @@ if win or hp < 1:
         print("you lost :(")
 else:
     print("game is still running.")
+"""
+numbers = range(1,6)
+def times(numb):
+    return numb * 2
+multiplie = map(times, numbers)
+print(list(multiplie))
+
+
 
 

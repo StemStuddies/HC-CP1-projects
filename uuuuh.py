@@ -1,3 +1,3 @@
-for x in range(0, 10000):
-    print(x)
-    
+s = ['1','2','3','4']
+res = map(int, s)
+print(list(res))
