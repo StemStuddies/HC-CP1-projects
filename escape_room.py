@@ -2,8 +2,8 @@
 import random
 import time
 import os
-codes = ("THISISTHECODE") 
-code = "wowzania"
+codes = ("happy", "computer", "superman", "rubikscube", "programming", "cooking") 
+code = random.choice(codes)
 chiper = ""
 shift = random.randint(1,26)
 guess = 1
