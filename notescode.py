@@ -42,12 +42,17 @@ if win or hp < 1:
 else:
     print("game is still running.")
 """
+"""
 numbers = range(1,6)
 def times(numb):
     return numb * 2
 multiplie = map(times, numbers)
-print(list(multiplie))
+print(list(multiplie))"""
+import random 
+index = random.randint(10)
+siblings = ["alex", "steve", "Noor", "Zuri", "Sunny", "Ari", "Efe", "Kai", "Makena"]
 
-
+print(siblings[index])
+random.randint
 
 
