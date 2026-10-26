@@ -48,7 +48,7 @@ average = total / rounds
 print("Your average guesses per round was " + str(round((average)))) #made average look clear. with rounding.
 
 best_round = scores[0]
-for i in range(0, rounds): #Logic error instead of -1 we need +1 so that it tests all rounds, and starting at 0 becuase of the list
+for i in range(0, rounds): #Logic error instead of minusing lets set it to start at 0 then go up so it fits with valid index of the list and getting all the values.
     if scores[i] < best_round:
         best_round = scores[i]
 
