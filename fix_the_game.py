@@ -41,16 +41,15 @@ print("\n--- Game Over ---")
 print("Your guesses per round: " , *scores) #Syntax error, can only concatenate string not lists. fixed using comma to split print and used unpacking operator
 
 total = 0
-for score in scores:
-    total = 0
+for score in scores: #there was a score = 0 stopping the total from working removed it to fix. 
     total = total + score
 
 average = total / rounds
-print("Your average guesses per round was " + str(round((average)))) #made average look clear.
+print("Your average guesses per round was " + str(round((average)))) #made average look clear. with rounding.
 
 best_round = scores[0]
-for i in range(1, rounds - 1):
-    if scores[i] > best_round: #logic error changed < to > so then it tests if its greater then it.
+for i in range(0, rounds): #Logic error instead of -1 we need +1 so that it tests all rounds, and starting at 0 becuase of the list
+    if scores[i] < best_round:
         best_round = scores[i]
 
 print(f"Your best round took only {best_round} guesses!")
