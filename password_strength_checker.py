@@ -13,12 +13,12 @@ if len(password) > 7: #testing if password length is greater then 7
     strength += 1
     tests[0] = 1
 for digit in password: #testing for uppercase
-    if digit == digit.upper():
+    if digit.isupper():
         strength += 1
         tests[1] = 1
         break
 for digit in password: #testing for lowercase 
-    if digit == digit.lower():
+    if digit.islower():
         strength += 1
         tests[2] = 1
         break
