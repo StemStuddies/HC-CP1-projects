@@ -1,6 +1,5 @@
 #hunter card password strength checker
-
-import os
+#removed os
 
 print("~~~~~~~~~~~~~PASSWORD STRENGTH CHECKER~~~~~~~~~~~~~")
 password = input("Password to test?: ")
