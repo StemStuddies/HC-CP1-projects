@@ -1,6 +1,6 @@
 import os
 # TERMINAL FUNCTIONS
-def rgb(red, green, blue): #function to set color. using werid string thingys that im going to ignore :)       took me way to long to get the symbols to work.
+def rgb(red= 255, green= 2555, blue= 255): #function to set color. using werid string thingys that im going to ignore :)       took me way to long to get the symbols to work.
     """
 keyword to change color of the text in the terminal 
 using red green blue values 0 to 255. 

@@ -1,5 +1,6 @@
 import random
 import time
+
 while True:
     char = chr(random.randint(0,127))
     print(f"{char}", end="")
