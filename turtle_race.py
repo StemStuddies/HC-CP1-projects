@@ -11,11 +11,23 @@ turtles = {
     5: t.Turtle(),
     6: t.Turtle()
 }
+t.color("black")
+t.penup()
+t.goto(500, -400)
+t.shape("square")
+t.shapesize(2)
+while t.ycor() <= 500:
+    t.color(0,0,0)
+    t.stamp()
+    t.forward(2)
+    t.color(100,100,100)
+    t.stamp()
+    t.forward(2)
 turtles[1].color("red")
-turtles[2].color("blue")
-turtles[3].color("green")
-turtles[4].color("yellow")
-turtles[5].color("orange")
+turtles[5].color("blue")
+turtles[4].color("green")
+turtles[3].color("yellow")
+turtles[2].color("orange")
 turtles[6].color("purple")
 for x in turtles:
     turtles[x].shape("turtle")
@@ -24,4 +36,7 @@ for x in turtles:
     turtles[x].goto(-500,(x*100)-300)
     turtles[x].pendown()
 while True:
-    turtles[random.randint(1,6)].forward(2)
+    turtles[random.randint(1,6)].forward(3)
+    turtles[random.randint(1,6)].speed(random.randint(2,4))
+
+
