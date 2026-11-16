@@ -27,9 +27,15 @@ def fin_line (inx, ofset):
         t.stamp()
         t.forward(40)
 
-def turtle(turt):
-    for ye in range(0,6):
-        if turt 
+def is_fin(turt):
+    for x in range(1,7):
+        if turt[x].xcor() > 540:
+            print(f">>>>>>>>>> {turt[x].pencolor()} Has won! <<<<<<<<<<")
+            return False
+        
+
+
+isrunning = True
 
 t.bgcolor(0,0,0)
 t.color("black")
@@ -49,10 +55,9 @@ for x in turtles:
     turtles[x].penup()
     turtles[x].goto(-500,(x*100)-300)
     turtles[x].pendown()
-while True:
+while is_fin(turtles):
     turtles[random.randint(1,6)].forward(3)
     turtles[random.randint(1,6)].speed(random.randint(2,4))
-    for x in range(0,6):
-        if turtles[x]
+
 
 
