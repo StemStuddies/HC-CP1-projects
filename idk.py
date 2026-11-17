@@ -1,6 +1,10 @@
-scores=[1,2,3,4]
-total = 0
-for score in scores: #there was a score = 0 stopping the total from working removed it to fix. 
-    total = total + score
-print(total)
-print(1 + 2 + 3 + 4)
+
+try:
+    with open("data.txt", "r") as file:
+        count = int(file.read())
+except:
+    count = 0
+count += 1
+print(f"This program has run {count} times.")
+with open("data.txt", "w") as file:
+    file.write(str(count))
