@@ -17,16 +17,19 @@ maindish = {
 #side dish dictonary with prices
 sidedish = {
     "fries": 1.99,
-    "salad": 2.50
-    ""
+    "salad": 2.50,
+    "fruit bowl": 1.49
 }
 
 #menu terminal art with stuff.
 print("""
-    _______MAIN_DISH_______        _______SIDE_DISH_______
-    hamburger 4.95$
-    chicken nuggets 3.99$  
+    ______________________________________________________
+    _______SIDE_DISH_______        _______MAIN_DISH_______
+    fries 1.99$                hamburger 4.95$
+    salad 2.50$                    chicken nuggets 3.99$
       
       
       
       """)
+
+
