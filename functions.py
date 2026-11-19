@@ -1,5 +1,5 @@
 #vl functions
-attempts = 0
+attempts = 0    
 
 def birthday(name,age):
     print("Happy Birthday to you")
