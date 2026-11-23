@@ -13,4 +13,23 @@ def calc(*numbers, oper="sum"):
     elif oper == "product":
         return(math.prod(*numbers))
 
-
+numberlist = []
+userin = 0
+invalid = False
+print("what numbers would you like to preform with? \n type done when done.")
+while userin != "done":
+    while True:
+        userin = input("type a number: ")
+        if userin == "done":
+            break
+        try:
+            int(userin)
+        except:
+            print("thats not a number!")
+        else:
+            break
+    if userin != "done":
+        numberlist.append(userin) 
+    
+                    
+            
